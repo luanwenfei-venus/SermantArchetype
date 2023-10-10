@@ -1,4 +1,4 @@
-# What is it?
+## What is it?
 Archetype when creating the sermant project.
 
 ## How to use it?
