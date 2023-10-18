@@ -8,6 +8,33 @@
 
     <packaging>pom</packaging>
 
+    <name>sermant-template-archetype</name>
+    <description>The development archetype of Sermant.</description>
+    <url>https://github.com/huaweicloud/Sermant</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/huaweicloud/Sermant</url>
+        <connection>scm:git:git://github.com/huaweicloud/Sermant.git</connection>
+        <developerConnection>scm:git:ssh://github.com:huaweicloud/Sermant.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <name>luanwenfei</name>
+            <id>luanwenfei-venus</id>
+            <email>luanwenfei@outlook.com</email>
+            <roles>
+                <role>Developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
@@ -17,4 +44,15 @@
         <module>template</module>
         <module>application</module>
     </modules>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 </project>
